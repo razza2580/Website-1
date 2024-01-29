@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Design & Development Showcase</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #495057;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #343a40;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffffff !important;
+    }
+
+    header {
+        position: relative;
+        background-image: url('images/hero_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #555;
+        padding: 60px 20px;
+        text-align: center;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .journal-entry {
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .portfolio-item {
+      position: relative;
+      margin: 20px;
+      width: 300px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      overflow: hidden;
+      color: #333;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .portfolio-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Buttons and Animations */
+    .btn-primary,
+    .btn-secondary {
+      background-color: #007bff;
+      border-color: #007bff;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      background-color: #0056b3;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .card,
+      .portfolio-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Design & Dev Showcase</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#insights">Insights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="journal.html">Journal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1 class="display-4" style="color: darkblue;">Design & Development Showcase</h1>
+    <p class="lead" style="z-index: 2;">Unlocking the Potential of User-Centric and Interactive Web Experiences</p>
+    <a href="#about" class="btn btn-primary btn-lg mt-3" style="z-index: 2;">Learn More</a>
+  </header>
+
+  <section id="about" style="background-color: #ffffff;">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">About this Showcase</h2>
+      <p class="lead text-dark">
+        Welcome to the Design & Development Showcase, where creativity harmonizes with technology. Our showcase is a celebration of the intricate dance between design aesthetics and cutting-edge development, aimed at crafting immersive and delightful digital experiences.
+      </p>
+      <p class="text-dark">
+        In this journey, we explore the marriage of form and function. Every pixel is placed with intention, and every line of code serves a purpose. We believe in creating not just websites or applications, but digital realms that captivate, engage, and leave a lasting impression on users.
+      </p>
+      <p class="text-dark">
+        Join us as we unfold stories of innovation, share insights on the challenges faced, and showcase the solutions that elevate user experiences to new heights. This showcase is not just a display of skills; it's a testament to the passion and dedication we pour into every project.
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio" style="background-image: url('images/portfolio_bg.jpg'); background-size: cover; color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center mb-4">Portfolio Showcase</h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-item">
+          <img src="images/ecommerce.jpg" class="img-fluid" alt="Project 1">
+          <div class="portfolio-content">
+            <h4 class="mt-3">E-commerce Redesign</h4>
+            <p>Revamped the UI for a leading e-commerce platform, resulting in a 20% increase in user engagement.</p>
+            <a href="#" class="btn btn-secondary mt-2">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="images/datatool.jpg" class="img-fluid" alt="Project 2">
+          <div class="portfolio-content">
+            <h4 class="mt-3">Data Visualization Tool</h4>
+            <p>Developed a dynamic data visualization tool, allowing users to explore complex datasets with ease.</p>
+            <a href="#" class="btn btn-secondary mt-2">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="images/social.jpg" class="img-fluid" alt="Project 3">
+          <div class="portfolio-content">
+            <h4 class="mt-3">Social Media Integration</h4>
+            <p>Integrated social media features into a corporate website, enhancing online presence and user engagement.</p>
+            <a href="#" class="btn btn-secondary mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="insights" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">Insights and Reflections</h2>
+      <p class="lead text-dark">
+        Our design and development journey has been a tapestry of lessons, challenges, and breakthroughs. Each project undertaken has not only honed our technical skills but has also shaped our approach towards creating meaningful and impactful digital solutions.
+      </p>
+      <p class="text-dark">
+        Through the lens of creativity, we have learned that design is not just about visuals; it's a language that communicates with the user. Every color, font choice, and interaction tells a story. On the development front, we have embraced agility, understanding that technology evolves, and so must our solutions.
+      </p>
+      <p class="text-dark">
+        The iterative nature of our work has taught us to view challenges as opportunities. From user feedback to emerging technologies, we have welcomed change and adapted, always striving to push the boundaries of what's possible. This showcase is a snapshot of our evolution, a testament to our commitment to delivering excellence.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Design & Development Showcase. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

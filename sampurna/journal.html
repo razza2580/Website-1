@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Design & Development Journal</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #495057;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #343a40;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffffff !important;
+    }
+
+    header {
+      position: relative;
+      background-image: url('images/journal_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #101935;
+      padding: 60px 20px;
+      text-align: center;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .journal-entry {
+      margin-bottom: 40px;
+      min-height: 500px;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+      height: 100%;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Design & Dev Showcase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#insights">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="journal.html">Journal</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  <header>
+    <h1 class="display-4">Design & Development Journal</h1>
+    <p class="lead">Exploring the Creative Journey Behind Web Experiences</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">Journal Entries</h2>
+
+      <div class="row">
+        <div class="col-md-4 journal-entry">
+          <div class="card">
+            <img src="images/entry1.jpg" class="card-img-top" alt="Journal Entry 1">
+              <h5 class="card-title">Unveiling the Creative Process</h5>
+              <p class="card-text">
+                As I embark on this design and development journey, I find myself immersed in a sea of possibilities and challenges. The creative process begins with ideation, where concepts take shape, and visions start to materialize. From wireframes to prototypes, each step is a revelation, uncovering the potential of user-centric designs and interactive web experiences.
+              </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 journal-entry">
+          <div class="card">
+            <img src="images/entry2.jpg" class="card-img-top" alt="Journal Entry 2">
+              <h5 class="card-title">Crafting Digital Experiences Beyond the Screen</h5>
+              <p class="card-text">
+                Welcome to the Design & Development Showcase, where creativity meets functionality, and every line of code is a stroke of innovation. In this entry, we explore the depth of crafting digital experiences that transcend the screen. From immersive storytelling to seamless interactions, the showcase becomes a canvas for transforming ideas into captivating web realities.
+              </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 journal-entry">
+          <div class="card">
+            <img src="images/entry3.jpg" class="card-img-top" alt="Journal Entry 3">
+              <h5 class="card-title">Designing Interactive Web Experiences</h5>
+              <p class="card-text">
+                Today's challenge: crafting web experiences that not only captivate but also engage. As I delved into the intricacies of interactive design, a world of possibilities unfolded. From dynamic user interfaces to intuitive navigation, the journey involves translating ideas into experiences that resonate with users and leave a lasting impact.
+              </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="journal-description" style="background-color: #f8f9fa; padding: 60px 20px;">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">Journal Description</h2>
+      <p class="lead text-dark">
+        Welcome to the Design & Development Journal, where the journey of creating captivating web experiences unfolds. This journal is a chronicle of the creative process, challenges faced, and insights gained throughout the design and development exploration. From user-centric designs to responsive layouts, each entry reflects a step in the continuous evolution of crafting digital narratives that resonate with audiences.
+
+        The creative journey begins with ideation, where concepts take shape, and visions start to materialize. From wireframes to prototypes, each step is a revelation, uncovering the potential of user-centric designs and interactive web experiences. As we delve into the intricacies of interactive design, a world of possibilities unfolds, translating ideas into experiences that resonate with users and leave a lasting impact.
+
+        Crafting digital experiences beyond the screen is at the heart of this exploration. The Design & Development Showcase becomes a canvas for transforming ideas into captivating web realities. From immersive storytelling to seamless interactions, every line of code is a stroke of innovation.
+
+        Navigating the challenges of responsive design is a crucial aspect of this journey. In the world of multi-device usage, creating responsive designs ensures a consistent user experience across devices. Strategies and techniques employed to navigate the intricacies of responsive design are explored, ensuring that the web experiences adapt seamlessly to varying screen sizes.
+
+        The art of user-centric design is not just a philosophy; it's a commitment. Empathizing with end-users, understanding their needs, and crafting interfaces that resonate with them is the essence of this design approach. Striking a delicate balance between aesthetics and functionality, every design decision aims to enhance the overall user experience.
+
+        Embracing minimalism in web design becomes a focus, where less is more. The power of minimalistic design principles and their impact on user engagement and overall aesthetics are explored. Every element serves a purpose, and whitespace becomes as essential as the content itself.
+
+        The journal entries are not just about showcasing completed projects but also about reflecting on the challenges and growth encountered along the way. Insights gained during this journey become valuable lessons, shaping the approach towards future design and development endeavors.
+
+        Join me on this immersive journey of innovation, where every line of code tells a story, and every design decision shapes the user experience. The Design & Development Journal is an evolving narrative, a testament to the ever-changing landscape of web design and development. Explore the entries, unlock the potential of user-centric experiences, and be part of the ongoing creative exploration.
+      </p>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
