@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Digital Odyssey Showcase</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: #ffffff !important;
+            }
+
+        header {
+            position: relative;
+            background-image: url('images/hero_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .journal-entry {
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-item {
+            position: relative;
+            margin: 20px;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            overflow: hidden;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .portfolio-item:hover {
+                transform: scale(1.05);
+            }
+
+            .portfolio-item img {
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+            }
+
+        .portfolio-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Buttons and Animations */
+        .btn-primary,
+        .btn-secondary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                background-color: #0056b3;
+            }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .card,
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Design & Dev Showcase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#insights">Insights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="DIGITAL ODYSSEY.html">Digital</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="display-4" style="color: greenyellow;">Digital Odyssey Showcase</h1>
+        <p class="lead" style="z-index: 2;">Unlocking the Potential of User-Centric and Interactive Web Experiences</p>
+        <a href="#about" class="btn btn-primary btn-lg mt-3" style="z-index: 2;">Learn More</a>
+    </header>
+
+    <section id="about" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4">About this Showcase</h2>
+            <p class="lead text-dark">
+                Welcome to the world of digital , where creativity  harmonizes with technology. Our  goal is to make everyone perfect in the world of digital .  It's important to be mindful of online security, privacy, and digital well-being. As you explore, remember to protect your personal information, be respectful of others, and use the digital world as a tool for growth and connection.
+
+            </p>
+            <p class="text-dark">
+                There are so many exciting things to explore. From immersive virtual reality experiences to interactive websites, the digital world offers a wide range of web experiences that can take your odyssey to the next level.
+
+            </p>
+            <p class="text-dark">
+                Join us as we unfold stories of innovation, whether you're diving into virtual reality, exploring interactive websites, learning from online courses, or connecting with others on social media, the web experiences on a digital odyssey are truly limitless. It's all about embracing the opportunities that the digital world has to offer and embarking on a journey of discovery and connection.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio" style="background-image: url('images/portfolio_bg.jpg'); background-size: cover; color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfolio Showcase</h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/vr capsule.jpg" class="img-fluid" alt="Project 1">
+                    <div class="portfolio-content">
+                        <h4 class="mt-3">VR Time Capsule</h4>
+                        <p>Build a virtual reality time capsule experience that transports users to historical events, cultural moments, or scientific breakthroughs. This immersive VR journey combines education and entertainment, allowing users to explore and interact with key moments in a three-dimensional space.</p>
+                        <a href="#" class="btn btn-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/Interactive StoryHub.jpg" class="img-fluid" alt="Project 2">
+                    <div class="portfolio-content">
+                        <h4 class="mt-3">Interactive StoryHub</h4>
+                        <p>Create an interactive storytelling website where users engage with dynamic narratives through multimedia elements. This platform supports user choices, influencing the story's direction. From fiction to educational content, StoryHub offers a personalized and immersive digital storytelling experience.</p>
+                        <a href="#" class="btn btn-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/digital well being.jpg" class="img-fluid" alt="Project 3">
+                    <div class="portfolio-content">
+                        <h4 class="mt-3">ZenZone: Digital Well-Being App</h4>
+                        <p>Develop a mobile app, ZenZone, focused on digital well-being. This application provides users with tools for time management, mindfulness, and usage analytics. By incorporating gamification, ZenZone encourages positive digital habits, helping users strike a healthy balance between their online and offline lives.
+
+
+
+
+                        </p>
+                        <a href="#" class="btn btn-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="insights" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4">Insights and Reflections</h2>
+            <p class="lead text-dark">
+                Our design and development journey has been a tapestry of lessons, challenges, and breakthroughs. Each project undertaken has not only honed our technical skills but has also shaped our approach towards creating meaningful and impactful digital solutions.
+            </p>
+            <p class="text-dark">
+                A digital odyssey can involve exploring new technologies, discovering innovative digital platforms, and embarking on creative endeavors in the digital space. It's about pushing boundaries, embracing new possibilities, and navigating through the vast landscape of the digital world.
+                For example, someone might embark on a digital odyssey by learning new programming languages, experimenting with virtual reality, or delving into the world of digital art. It's a journey of self-discovery, growth, and exploration within the digital realm.
+            </p>
+            <p class="text-dark">
+                The iterative nature of our work has taught us to view challenges as opportunities. From user feedback to emerging technologies, we have welcomed change and adapted, always striving to push the boundaries of what's possible. This showcase is a snapshot of our evolution, a testament to our commitment to delivering excellence.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Design & Development Showcase. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
